@@ -160,6 +160,7 @@ a {
 }
 
 .responsive-nav .hamburger i {
+  padding: 5px;
   font-size: 1.5em;
   margin: 20px 10px;
 }
