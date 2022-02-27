@@ -304,171 +304,56 @@ p {
 .right-side-container {
   width: 100%;
   height: 100vh;
-  position: relative;
 }
 
-.right-side-container .buttons {
-  position: absolute;
-  top: 25%;
+.right-side-container .heading-container {
+  height: 40%;
+  background: url("/images/education-img.jpeg") no-repeat center top/cover;
+  width: 100%;
+}
+
+.right-side-container .heading-container .heading-content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-.right-side-container .buttons button {
-  border: none;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-  padding: 13px 15px;
-  border-radius: 50%;
-  outline: none;
-}
-
-.right-side-container .buttons button i {
-  font-size: 1.7em;
-}
-
-.right-side-container .buttons button:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-.right-side-container .slider {
-  position: relative;
-  overflow: hidden;
-  height: 60%;
-  width: 100%;
-}
-
-.right-side-container .slider .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 60%;
   height: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
 }
 
-.right-side-container .slider .slide .content {
-  position: absolute;
-  bottom: 70px;
-  left: -600px;
-  width: 600px;
+.right-side-container .heading-container .heading-content-wrapper .heading-content {
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
   padding: 35px;
-  z-index: 1;
+  margin-bottom: 60px;
 }
 
-.right-side-container .slider .slide .content h1 {
-  margin-bottom: 10px;
-}
-
-.right-side-container .slider .slide .content a {
-  text-decoration: underline;
-  font-size: 1.1em;
-}
-
-.right-side-container .slider .slide .content a:hover {
-  color: #007bff;
-  text-decoration: underline;
-  opacity: 0.5;
-}
-
-.right-side-container .slider .slide.current {
-  opacity: 1;
-}
-
-.right-side-container .slider .slide.current .content {
-  opacity: 1;
-  -webkit-transform: translateX(600px);
-          transform: translateX(600px);
-  -webkit-transition: all 0.7s ease-in-out 0.3s;
-  transition: all 0.7s ease-in-out 0.3s;
-}
-
-@media (max-width: 1020px) {
-  .right-side-container .slider .right-side-container {
-    height: 60vh;
-  }
-  .right-side-container .slider .slide .content {
-    bottom: -300px;
-    left: 0;
-    width: 100%;
-  }
-  .right-side-container .slider .slide.current .content {
-    -webkit-transform: translateY(-300px);
-            transform: translateY(-300px);
-  }
-}
-
-.right-side-container .about-container {
+.right-side-container .main-content-container {
   margin: 40px 15px 15px;
 }
 
-.right-side-container .about-container span {
+.right-side-container .main-content-container span {
   padding: 0 12px;
   margin-left: 30px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   display: inline-block;
   color: #555;
   margin-bottom: 20px;
   font-size: 0.9em;
 }
 
-.right-side-container .about-container h2 {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1, 8;
-  padding: 0 12px;
-  margin-left: 30px;
-  letter-spacing: 5px;
+@media (max-width: 1020px) {
+  .right-side-container .heading-container .heading-content-wrapper {
+    width: 100%;
+  }
+  .right-side-container .heading-container .heading-content-wrapper .heading-content {
+    margin-bottom: 0;
+  }
 }
-
-.right-side-container .about-container .about-content-wrapper {
-  margin-left: 20px;
-  padding: 20px;
-}
-
-.right-side-container .about-container .about-content-wrapper p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 400;
-}
-
-.right-side-container .about-container .about-content-wrapper p a {
-  text-decoration: underline;
-}
-
-.right-side-container .interest-container {
-  margin: 50px 15px 15px;
-}
-
-.right-side-container .interest-container span {
-  padding: 0 12px;
-  margin-left: 30px;
-  letter-spacing: 5px;
-  display: inline-block;
-  color: #555;
-  margin-bottom: 20px;
-  font-size: 0.9em;
-}
-
-.slide:first-child {
-  background: url("../images/typing.jpeg") no-repeat center top/cover;
-}
-
-.slide:nth-child(2) {
-  background: url("../images/code-img.png") no-repeat center top/cover;
-}
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=my-journey.css.map */
