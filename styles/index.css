@@ -33,7 +33,7 @@ p {
           align-items: flex-start;
   background-color: #f2f3f7;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .navbar-container .navbar-top-section-wrapper {
@@ -96,7 +96,7 @@ p {
 }
 
 .navbar-container .email-wrapper a {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .navbar-container .email-wrapper a:hover {
@@ -303,7 +303,7 @@ p {
 
 .right-side-container .buttons {
   position: absolute;
-  top: 50%;
+  top: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +335,7 @@ p {
 .right-side-container .slider {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 60%;
   width: 100%;
 }
 
@@ -401,6 +401,61 @@ p {
     -webkit-transform: translateY(-300px);
             transform: translateY(-300px);
   }
+}
+
+.right-side-container .about-container {
+  margin: 40px 15px 15px;
+}
+
+.right-side-container .about-container span {
+  padding: 0 12px;
+  margin-left: 30px;
+  letter-spacing: 5px;
+  display: inline-block;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+.right-side-container .about-container h2 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1, 8;
+  padding: 0 12px;
+  margin-left: 30px;
+  letter-spacing: 5px;
+}
+
+.right-side-container .about-container .about-content-wrapper {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.right-side-container .about-container .about-content-wrapper p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+}
+
+.right-side-container .about-container .about-content-wrapper p a {
+  text-decoration: underline;
+}
+
+.right-side-container .interest-container {
+  margin: 50px 15px 15px;
+}
+
+.right-side-container .interest-container span {
+  padding: 0 12px;
+  margin-left: 30px;
+  letter-spacing: 5px;
+  display: inline-block;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 0.9em;
 }
 
 .slide:first-child {
